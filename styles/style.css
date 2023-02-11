@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--Paleblue);
+}
+.container-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0 1rem 0;
+    background-color:var(--Brightblue);
+    border-radius: 2rem;
+}
+.logo-nav{
+    width: 70px;
+}
+.networks-nav{
+    width: 180px;
+    display: flex;
+    justify-content:space-between;
+}
+.network{
+    font-size: 2.3rem;
+    color:var(--Paleblue);
+}
+.logo-nav:hover{
+    transform: translateY(0rem) rotate(90deg);
+}
+.network:hover{
+    transform: scale(1.2);
+}
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-main{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--Darkblue);
+    text-align: center;
+}
+.content-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0px 10px 12px hsl(0, 0%, 8%, 15%);
+    background-color:darkcyan;
+}
+#question{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+}
+.answer{
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    align-items:center;
+}
+.select-answer{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0.7rem;
+}
+.text-answer{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 2.4rem;
+    cursor: pointer;
+    background-color: var(--Paleblue);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--Darkblue);
+    border: solid 1px var(--Darkblue);
+}
+.answer:hover{
+    transform: scale(1.01);
+}
+.text-answer:hover{
+    border: solid 2px indigo;
+}
+.select-answer:checked + .text-answer{
+    border: solid 3px indigo;
+    box-shadow: 0px 0px 6px 0px indigo;
+}
+.info, .alerts, .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.progress{
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+.alert{
+    margin-top: 0rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: red;
+    animation: neonEffectAlert 5s infinite;
+}
+@keyframes neonEffectAlert{
+    0%, 35%, 45%, 65%, 100% {
+        text-shadow:
+        white 0 0 6px,
+        #EFFD6D 0 0 12px,
+        #EFFD6D 0 0 24px;
+    }
+    40%, 60%{
+        text-shadow: none;
+    }
+}
+.score{
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 15px;
+    background-color: black;
+    color:white;
+    padding: 5px 20px;
+    animation: neonEffect 5s infinite;
+    text-align: center;
+}
+@keyframes neonEffect{
+    0%, 35%, 45%, 65%, 100% {
+        text-shadow:
+        white 0 0 12px,
+        #EFFD6D 0 0 24px,
+        #EFFD6D 0 0 36px;
+    }
+    40%, 60%{
+        text-shadow: none;
+    }
+}
+#next{
+    margin-top: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color:mediumblue;
+    color: var(--Paleblue);
+    border: solid 2px mediumblue;
+    border-radius: 15px;
+    padding: 2px 40px;
+    cursor: pointer;
+}
+#next:hover{
+    background-color: var(--Paleblue);
+    color:mediumblue;
+    border: solid 2px mediumblue;
+}
+#next:active{
+    transform: scale(1.05);
+}
+#restart{
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color:maroon;
+    color: var(--Paleblue);
+    border: solid 2px maroon;
+    border-radius: 15px;
+    padding: 2px 20px;
+    cursor: pointer;
+}
+#restart:hover{
+    background-color: var(--Paleblue);
+    color:maroon;
+    border: solid 2px maroon;
+}
+#finish{
+    margin-top: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color:darkorange;
+    color: var(--Paleblue);
+    border: solid 2px darkorange;
+    border-radius: 15px;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+#finish:hover{
+    background-color: var(--Paleblue);
+    color:darkorange;
+    border: solid 2px darkorange;
+}
+.coded{
+    text-align: center;
+    color: var(--Darkblue);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}

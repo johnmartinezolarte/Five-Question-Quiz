@@ -1,0 +1,52 @@
+[
+    {
+        "question":"What is Batman's real identity?",
+        "choices":[
+            "Bruce Wayne",
+            "Clark Kent",
+            "Peter Parker",
+            "Arthur Curry"
+        ],
+        "answer":"Bruce Wayne"
+    },
+    {
+        "question":"For his role in which movie did actor Heath Ledger win an Oscar?",
+        "choices":[
+            "A Knight's Tale",
+            "I'm Not There",
+            "The Dark Knight",
+            "Brokeback Mountain"
+        ],
+        "answer":"The Dark Knight"
+    },
+    {
+        "question":"Which film company made the Harry Potter series of adventures?",
+        "choices":[
+            "Disney",
+            "Warner Bros",
+            "Netflix",
+            "Paramount Pictures"
+        ],
+        "answer":"Warner Bros"
+    },
+    {
+        "question":"In 'Titanic', what is the name of Rose's necklace?",
+        "choices":[
+            "The Jewel of the Ocean",
+            "The Spirit of the Ocean",
+            "The Heart of the Ocean",
+            "The soul of the Ocean"
+        ],
+        "answer":"The Heart of the Ocean"
+    },
+    {
+        "question":"In 'Slumdog Millionaire', what is the grand prize question Jamal is asked?",
+        "choices":[
+            "Who wrote 'Les Miserables'?",
+            "Who is the third musketeer?",
+            "Which language is on the Rosetta Stone?",
+            "Which of these films was directed by Bernardo Bertolucci?"
+        ],
+        "answer":"Who is the third musketeer?"
+    }
+]
